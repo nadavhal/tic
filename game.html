@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!--mine-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tak-Toe</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Tic Tac Toe</h1>
+    </div>
+    <div class="game">
+        <div class="details">
+            <div id="stopwatch" class="timer">
+                00:00:00:0
+            </div><br/>
+            <button class="btn" onclick="stopTimer()">stop timer</button><br><br>
+            <button class="btn" onclick="restartGame()">restart game</button><br><br>
+            <button class="btn" onclick="backStep()">back step</button><br><br>
+            <div class="players">
+                <span id="name1"></span>
+                Score: <span id="score1">0</span><br>vs<br>
+                <span id="name2"></span>
+                Score: <span id="score2">0</span><br><br>
+                <span style="font-size: 30px;">Lowest steps: </span> <span id="lowest"></span>
+                
+            </div>
+        </div>
+        <div class="gameTable">
+            <div id='board' class="board">
+                
+            </div>
+        </div>
+        <div class="winning-message" data-winning-message>
+            <p></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
